@@ -64,13 +64,16 @@
        
         }
         form p{
+             position:absolute;
+             margin-top:100px ;
             font-size: 13;
             text-align: left;
             margin-left: -10%;
         }
         form p a{
+          
             text-decoration: none;
-             
+             margin-top: 0px ;
         }
         .btns{
             width: 100%;
@@ -87,7 +90,7 @@
             transition: background 1s;
             border-radius: 20px;
             height: 40px;
-
+            margin-top:35px ;
         }
         .inputs{
             height: 250px;
@@ -97,7 +100,7 @@
             color: #000;
         }
         .continue{
-            margin-top:15%;
+            margin-top:24%;
             flex-basis: 48%;
             background: rgb(252,129,129);
             color: #ffffff;
@@ -109,6 +112,7 @@
             height: 40px;
             margin-left: 0%;
             width: 200px;
+            
         }
     </style>
 </head>
@@ -120,17 +124,21 @@
         <!--signup inputs  -->
         <form>
             <div class="inputs">
+              <div class="input-field" id="namefield">
+                    <!--user name  input  -->
+                    <input type="email" placeholder="if you're dad your enter your email"required>   
+                </div>
                 <div class="input-field" id="namefield">
                     <!--user name  input  -->
-                    <input type="text" placeholder="user name">   
+                    <input type="text" placeholder="user name"required>   
                 </div>
                 <div class="input-field">
                     <!--email   input  -->
-                    <input type="email" placeholder="email">   
+                    <input type="email" placeholder="email"required>   
                 </div>
                 <div class="input-field">
                     <!--password  inputs  -->
-                    <input type="password" placeholder="password">  
+                    <input type="password" placeholder="password" required>  
                 </div>
                 <!--forget password  link  -->
                <p> forget password<a href="" class="forgetpassword">    click here</a></p>
