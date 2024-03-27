@@ -149,7 +149,7 @@
                 <button type="button" id="signinbtn" class="disable">login</button>
             
             </div>
-            <button class="continue">continue</button>
+            <button class="continue"onclick="gohome()" >continue</button>
 
         </form>
     </div>
@@ -172,6 +172,9 @@ signupbtn.onclick = function(){
     title.innerHTML= "sign up"
     signupbtn.classList.remove("disable")
     signinbtn.classList.add("disable")
+}
+        function gohome(){
+    window.location= "home.html"
 }
     </script>
 </body>
